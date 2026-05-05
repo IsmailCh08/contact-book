@@ -12,13 +12,13 @@ else:
 
 def lookup_number():
     name = input("Whose number do you want to find? ")
-    print(phone_Dict[name])
+    print(f"{name}'s number is {phone_Dict[name]}")
     with open('PhoneBook.json', 'w') as file:
         json.dump(phone_Dict, file)
 
 
 def delete_number():
-    name = input("Whose name do you want to delete? ")
+    name = input("Whose number do you want to delete? ")
     phone_Dict.pop(name)
     with open('PhoneBook.json', 'w') as file:
         json.dump(phone_Dict, file)
