@@ -25,8 +25,6 @@ def delete_number():
 
 def insert_number():  
     name = input("Whats the persons name? ")
-    while type(name) != str :
-        name = input("Whats the persons name? ")
 
     number = input("Whats the persons number? ")
     while not number.isdigit():    
